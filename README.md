@@ -87,7 +87,7 @@ Include screenshots of the app (search page and recipe details page) for better 
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the Self License. See the LICENSE file for details.
 
 ---
 

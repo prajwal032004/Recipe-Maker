@@ -17,7 +17,7 @@ This is a Flask-based web application that allows users to search for recipes us
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/recipe-finder-app.git
+   git clone https://github.com/prajwal032004/recipe-finder-app.git
    cd recipe-finder-app
    ```
 
@@ -50,6 +50,24 @@ This is a Flask-based web application that allows users to search for recipes us
    ```
 
 3. Use the search bar to find recipes or click on a recipe to view more details.
+
+## Routes
+
+### Home Page
+**Path:** `/home`  
+**Method:** `GET`  
+Renders the homepage with an empty search query and no recipes displayed initially.
+
+### Main Page
+**Path:** `/`  
+**Method:** `GET`, `POST`  
+- **POST**: Handles recipe search queries submitted via the search form and fetches matching recipes.
+- **GET**: Displays recipes based on the `search_query` parameter or an empty search if none is provided.
+
+### View Recipe
+**Path:** `/recipe/<int:recipe_id>`  
+**Method:** `GET`  
+Fetches detailed information about a specific recipe using its `recipe_id` and displays the details along with cooking instructions.
 
 ## File Structure
 
